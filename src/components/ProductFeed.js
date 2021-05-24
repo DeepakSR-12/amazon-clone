@@ -23,7 +23,7 @@ const ProductFeed = ({ products }) => {
         alt=""
       />
 
-      <div className="md:col-span-2">
+      <div className="md:col-start-2">
         {products
           .slice(4, 5)
           .map(({ id, title, description, price, category, image }) => (
