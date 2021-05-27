@@ -1,6 +1,6 @@
 import { StarIcon } from "@heroicons/react/solid";
 import Image from "next/image";
-import Cuurency from "react-currency-formatter";
+import Currency from "react-currency-formatter";
 import { useDispatch } from "react-redux";
 import { addToBasket, removeFromBasket } from "../slices/basketSlice";
 
@@ -50,7 +50,7 @@ const CheckoutProduct = ({
             ))}
         </div>
         <p className="text-xs my-2 line-clamp-2">{description}</p>
-        <Cuurency quantity={price} currency="INR" />
+        <Currency quantity={price} currency="INR" />
 
         {hasPrime && (
           <div className="flex items-center space-x-2">
